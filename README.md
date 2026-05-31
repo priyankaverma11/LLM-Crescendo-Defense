@@ -64,6 +64,15 @@ ASR measures the percentage of attacks that successfully bypass the defense syst
 | Successful Attacks        | 0     |
 | Attack Success Rate (ASR) | 0%    |
 
+### ASR Comparison
+
+![ASR Comparison](results/asr_comparison.png)
+
+### Attack Severity Distribution
+
+![Attack Severity](results/attack_severity.png)
+
+
 The proposed defense pipeline successfully classified all simulated attacks as either Medium Risk or High Risk.
 
 ---
