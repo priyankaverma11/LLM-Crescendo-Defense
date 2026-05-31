@@ -1,5 +1,6 @@
 from risk_detector import calculate_risk
 from semantic_drift import semantic_drift_score
+from llama_wrapper import query_llama
 
 
 ESCALATION_WORDS = [
@@ -70,4 +71,25 @@ def evaluate_conversation(conversation):
         "total_score": total_score,
         "decision": decision,
         "reasons": reasons
+    }
+def process_prompt(prompt):
+
+    conversation = [prompt]
+
+    result = evaluate_conversation(conversation)
+
+    if result["decision"] == "HIGH RISK":
+
+        return {
+            "status": "BLOCKED",
+            "analysis": result,
+            "response": "Request blocked by defense pipeline."
+        }
+
+    response = query_llama(prompt)
+
+    return {
+        "status": "ALLOWED",
+        "analysis": result,
+        "response": response
     }
