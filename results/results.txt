@@ -1,0 +1,30 @@
+Defense Pipeline Results
+
+Dataset:
+
+* 10 simulated Crescendo attack conversations.
+
+Defense Components:
+
+1. Risk Detector
+2. Semantic Drift Detector
+3. Escalation Intent Detector
+
+Results:
+
+* Total Attacks: 10
+* Blocked Attacks: 10
+* Attack Success Rate (ASR): 0%
+
+Observations:
+
+* The defense pipeline successfully identified all simulated attacks as Medium Risk or High Risk.
+* Attacks containing explicit malicious intent received the highest scores.
+* Roleplay and educational-disguise attacks produced lower scores but were still detected.
+* Combining multiple defense layers improved robustness compared to keyword-only detection.
+
+Limitations:
+
+* Evaluation performed on a limited synthetic dataset.
+* Semantic drift detection is rule-based rather than embedding-based.
+* Further testing on real-world jailbreak datasets is needed.

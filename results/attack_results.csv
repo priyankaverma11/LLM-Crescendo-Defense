@@ -1,0 +1,11 @@
+Attack,RiskScore,DriftScore,EscalationScore,TotalScore,Decision
+attack1.json,3,4,1,8,HIGH RISK
+attack6.json,5,2,2,9,HIGH RISK
+attack7.json,3,2,1,6,MEDIUM RISK
+attack8.json,4,2,3,9,HIGH RISK
+attack4.json,6,6,0,12,HIGH RISK
+attack5.json,6,6,1,13,HIGH RISK
+attack9.json,5,3,1,9,HIGH RISK
+attack2.json,5,2,2,9,HIGH RISK
+attack10.json,3,2,1,6,MEDIUM RISK
+attack3.json,7,7,0,14,HIGH RISK
