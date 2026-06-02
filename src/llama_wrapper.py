@@ -7,4 +7,13 @@ def query_llama(prompt):
         text=True
     )
 
+    print("STDOUT:")
+    print(result.stdout)
+
+    print("STDERR:")
+    print(result.stderr)
+
+    print("RETURN CODE:")
+    print(result.returncode)
+
     return result.stdout.strip()
