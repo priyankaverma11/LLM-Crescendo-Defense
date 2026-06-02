@@ -210,8 +210,8 @@ python3 test_pipeline_llama.py
 ## Author
 
 Priyanka Verma
+
 B.Tech Instrumentation and Control Engineering
 Netaji Subhas University of Technology (NSUT)
 
-Project developed for the AIMS-DTU Research Internship Selection.
 
